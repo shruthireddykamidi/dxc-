@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+input string: <input type="text" id="myText">
+key: <input type="text" id="myKey">
+
+<button onclick="myFunction()">Find</button>
+
+<p id="out"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myText").value;
+  var y = document.getElementById("myKey").value;
+  var myPattern = new RegExp('(\\w*'+ y +'\\w*)','gi');
+
+  var matches = x.match(myPattern);
+  if (matches === null)
+  {
+      document.getElementById("out").innerHTML = "No such "+"'"+ y +"'"+ " present";
+      return;
+  }
+
+  document.getElementById("out").innerHTML = "key - " + "'"+ y +"'" + " present in the input string!";
+}
+</script>
+</body>
+</html>

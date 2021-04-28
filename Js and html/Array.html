@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Finding the second lowest and second greatest numbers from an array</title>
+<script type ="text/javascript">
+function SGL(a_num)
+{
+    a_num.sort(function(x,y)
+    {
+       return x-y;           
+    });
+    var result = []
+    result.push(a_num[1],a_num[a_num.length-2]);
+    return result.join(',');
+}
+</script>
+</head>
+<body>
+<script type ="text/javascript">
+document.write(SGL([1,2,3,4,5]));
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>JavaScript Form Validation using a sample registration form</title>
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
+<script >
+function formValidation()
+{
+var pwdid = document.registration.pwdid;
+var uname = document.registration.username;
+if(pwdid_validation(pwdid,7,12))
+{
+if(allLetter(uname))
+{
+
+}
+}
+return false;
+}
+
+function pwdid_validation(pwdid,x,y)
+{
+var pwdid_len = pwdid.value.length;
+if (pwdid_len == 0 ||pwdid_len >= y || pwdid_len < x)
+{
+alert("Password should not be empty / length be between "+x+" to "+y);
+pwdid.focus();
+return false;
+}
+return true;
+}
+function allLetter(uname)
+{ 
+var letters = /^[A-Za-z]+$/;
+if(uname.value.match(letters))
+{
+alert('Form Succesfully Submitted');
+window.location.reload()
+return true;
+}
+else
+{
+alert('Username must have alphabet characters only');
+uname.focus();
+return false;
+}
+
+}
+</script>
+</head>
+<body onload="document.registration.userid.focus();">
+<h1>Validation Form</h1>
+
+<form name='registration' onSubmit="return formValidation();">
+<ul>
+<li><label for="username">Name:</label></li>
+<li><input type="text" name="username" size="50" /></li>
+<li><label for="pwdid">Password:</label></li>
+<li><input type="password" name="pwdid" size="12" /></li>
+
+<li><input type="submit" name="submit" value="Submit" /></li>
+</ul>
+</form>
+</body>
+</html>
