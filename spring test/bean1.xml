@@ -5,15 +5,14 @@
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
    
    <bean id="cohorts" class="com.Cohorts">
-   <property name="cohortid" value="123"></property>
-   <property name="cohortname" value="shruthi"></property>
+   <property name="cohortid" value="5678"></property>
+   <property name="cohortname" value="Shruthi Reddy"></property>
    <property name="emailid" value="shruthi@gmail.com"></property>
    <property name="number" value="8790428078"></property>
    </bean>
    <bean id="dxc" class="com.DXC">
-   <property name="empid" value="123"></property>
-   <property name="emptype" value="IT"></property>
+   <property name="empid" value="101"></property>
+   <property name="emptype" value="software developer"></property>
    <property name="year" value="2021"></property>
-   <property name="cohort" value="app"></property>
    </bean>
 </beans>

@@ -1,5 +1,4 @@
-package com;
-
+package com.example.demo;
 public class Cohorts {
 	public Cohorts() {
 		super();
@@ -11,26 +10,26 @@ public class Cohorts {
 	private String emailId;
 	private long contactNo;
 	
-	public int getCohortId() {
-		return CohortId;
+	public void getCohortId() {
+		System.out.println("cohort id is...>"+CohortId);
 	}
 	public void setCohortId(int cohortId) {
 		CohortId = cohortId;
 	}
-	public String getCohortName() {
-		return CohortName;
+	public void getCohortName() {
+		System.out.println("cohort name is...>"+CohortName);
 	}
 	public void setCohortName(String cohortName) {
 		CohortName = cohortName;
 	}
-	public String getEmailId() {
-		return emailId;
+	public void getEmailId() {
+		System.out.println("cohort mail id is...>"+emailId);
 	}
 	public void setEmailId(String emailId) {
 		this.emailId = emailId;
 	}
-	public long getContactNo() {
-		return contactNo;
+	public void getContactNo() {
+		System.out.println("cohort number is...>"+contactNo);
 	}
 	public void setContactNo(long contactNo) {
 		this.contactNo = contactNo;
