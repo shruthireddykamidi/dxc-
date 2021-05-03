@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id="cohorts" class="com.Cohorts">
+   <property name="cohortid" value="123"></property>
+   <property name="cohortname" value="shruthi"></property>
+   <property name="emailid" value="shruthi@gmail.com"></property>
+   <property name="number" value="8790428078"></property>
+   </bean>
+   <bean id="dxc" class="com.DXC">
+   <property name="empid" value="123"></property>
+   <property name="emptype" value="IT"></property>
+   <property name="year" value="2021"></property>
+   <property name="cohort" value="app"></property>
+   </bean>
+</beans>
